@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-bootstrap
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/David-VTUK/kubevirt-argocd-demo-app-of-apps.git
+    path: argo-apps/applications
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: openshift-gitops
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
