@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/David-VTUK/kubevirt-argocd-demo-app-of-apps.git
     targetRevision: HEAD
-    path: Networks
+    path: networks
   destination:
     server: https://kubernetes.default.svc
     namespace: default

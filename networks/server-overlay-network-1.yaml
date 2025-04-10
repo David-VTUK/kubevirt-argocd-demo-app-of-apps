@@ -2,7 +2,7 @@ apiVersion: k8s.cni.cncf.io/v1
 kind: NetworkAttachmentDefinition
 metadata:
   annotations: {}
-  name: server-overlay-network-1
+  name: server-overlay-network-1-app-of-apps
   namespace: virtual-machines
 spec:
   config: |-
