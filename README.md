@@ -1,0 +1,1 @@
+# kubevirt-argocd-demo-app-of-apps
